@@ -19,7 +19,6 @@ body {
     background-image: url('images/homepagebg.png');
     background-size: cover;
     padding-top: 20px;
-
 }
 
 
@@ -42,6 +41,11 @@ body {
     color: #ec5242;
     font-weight: 900;
     text-align: left;
+    background-image: url('images/headingbg.png');
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
 }
 .heading h2 {
     font-size: 23px;
@@ -98,11 +102,30 @@ body {
 
 .container h2 {
     font-size: 20px;
-    margin-bottom: 20px;
     color: white;
     text-align: center;
     font-weight: 400;
+    display: inline-block; /* Keeps the underline to the text width */
+    position: relative; /* Allows positioning of the ::after element */
+    margin-bottom: 20px;
 }
+
+.container h2::after {
+    content: "";
+    position: absolute; /* Allows ::after to be positioned relative to the h2 */
+    left: 50%; /* Start at the center */
+    bottom: -3px; /* Adjust as needed for desired spacing */
+    transform: translateX(-50%);
+    width: 0; /* Start with no width */
+    height: 2px; /* Height of the underline */
+    background-color: #ec5242; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.container h2:hover::after {
+    width: 100%; /* Expands to the width of the heading */
+}
+
 
 .card {
     background-color: rgba(64, 65, 68, 0.7); 
@@ -161,6 +184,26 @@ body {
     font-size: 1.2em;
     color: #333;
     margin-bottom: 5px;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block; /* Keeps the underline to the text width */
+    position: relative; /* Allows positioning of the ::after element */
+}
+
+.speakers-section h2::after {
+    content: "";
+    position: absolute; /* Allows ::after to be positioned relative to the h2 */
+    left: 50%; /* Start at the center */
+    bottom: -3px; /* Adjust as needed for desired spacing */
+    transform: translateX(-50%);
+    width: 0; /* Start with no width */
+    height: 2px; /* Height of the underline */
+    background-color: #ec5242; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.speakers-section h2:hover::after {
+    width: 100%; /* Expands to the width of the heading */
 }
 
 .speaker {
@@ -228,68 +271,63 @@ body {
 
 
 footer {
-    background-color: white;
-    padding: 30px 0;
-    text-align: center;
-  }
-  
-  .footer-content {
-    margin: 0 auto;
-    padding-bottom: 10px;
-  }
+  background-color: white;
+  padding: 30px 0;
+  text-align: center;
+}
 
-  .logodiv{
-    background-color: #434549;
-    color: white;
-    padding: 20px 20px 35px 20px;
+.footer-content {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.logodiv{
+  background-color: #434549;
+  color: white;
+  padding: 20px 20px 35px 20px;
+}
+.footer-content p{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
 
-  }
+.partner-logos {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-  .footer-content p{
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0 20px 0;
-  }
-  
-  .partner-logos {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .partner-logos li {
-    margin: 0 10px; 
-    border: 1px solid rgb(78, 77, 77);
-    border-radius: 2px;
-  }
-  
-  .partner-logos img {
-    height: 50px; 
-    width: 80px;
-  }
-  
-  .copyright {
-    margin: 25px 0 0 0;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+.partner-logos li {
+  margin: 0 10px; 
+  border: 1px solid rgb(78, 77, 77);
+  border-radius: 2px;
+}
 
-  .copyright p{
-    font-size: 11px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
+.partner-logos img {
+  height: 50px; 
+  width: 80px;
+}
 
-  .copyright img{
-    width: 150px;
-    height: 27px;
-  }
-  
-  .copyright a {
-    color: #007bff;
-  }
+.copyright {
+  margin: 25px 0 0 0;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.copyright p{
+  font-size: 11px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.copyright img{
+  width: 150px;
+  height: 27px;
+}
+
+.copyright a {
+  color: #007bff;
+}

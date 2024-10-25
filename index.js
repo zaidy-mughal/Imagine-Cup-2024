@@ -1,39 +1,39 @@
 // Array of speaker objects
 const speakers = [
     {
-        name: "Yochai Benkler",
+        name: "Imran Khan",
+        title: "Legendary Cricketer Prime Minister of Islamic Republic of Pakistan.",
+        description: "As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science, technology, humanities, and the arts.",
+        img: "images/imrankhan.png"
+    },
+    {
+        name: "Shoaib Akhtar",
         title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
         description: "Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.",
         img: "images/shoaib.png"
     },
     {
-        name: "SohYeong Noh",
+        name: "Micheal Starc",
         title: "Director of Art Centre Nabi and a board member of CC Korea",
         description: "As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science, technology, humanities, and the arts.",
         img: "images/starc.png"
     },
     {
-        name: "Speaker 3",
-        title: "Title 3",
-        description: "Description 3.",
+        name: "Babar Azam",
+        title: "Director of Art Centre Nabi and a board member of CC Korea",
+        description: "As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science.",
         img: "images/babar.png"
     },
     {
-        name: "Speaker 4",
-        title: "Title 4",
-        description: "Description 4.",
-        img: "images/imrankhan.png"
-    },
-    {
-        name: "Speaker 5",
-        title: "Title 5",
-        description: "Description 5.",
+        name: "Rohit Sharma",
+        title: "Indian Cricket Player and Captain also Known as Hitman for his Six hitting talent.",
+        description: "As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science, technology, humanities, and the arts.",
         img: "images/rohit.png"
     },
     {
-        name: "Speaker 6",
-        title: "Title 6",
-        description: "Description 6.",
+        name: "Dale Steyn",
+        title: "World's Number 1 Test baller. Number 1 in ranking for 7 years in a row.",
+        description: "As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding",
         img: "images/dale.png"
     }
 ];
