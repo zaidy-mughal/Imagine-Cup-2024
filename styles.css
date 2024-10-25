@@ -27,6 +27,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: left;
+    background-image: url('images/highlights.png');
 }
 
 .header div{
@@ -35,45 +36,58 @@ body {
     background-image: url('images/hamburger.png');
     background-size: cover;
     background-position: center;
+    margin-bottom: 60px;
 }
+
 .heading {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: left;
 }
 
 .heading h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     color: rgb(255, 0, 0);
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    font-weight: 800;
+    text-align: left;
 }
 .heading h2 {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #ff0000;
-    margin: 5px 0;
+    margin: 0;
+    text-align: left;
 }
 .info {
-    background-color: #e5e5e5;
-    padding: 15px;
+    background-color: #f7f4f4;
+    padding: 0px;
     margin: 20px 0;
     border-radius: 10px;
+    text-align: left;
+    border: 1px solid rgb(231, 230, 230);
 }
 .info p {
-    font-size: 1.1em;
-    color: #333;
+    font-size: 15px;
+    color: #000000;
+    text-align: left;
+    padding: 10px
 }
 .event-date {
-    font-size: 1.2em;
-    color: #ff4500;
+    font-size: 1.4em;
+    font-weight: 1200;
+    color: #464241;
 }
 .venue {
     font-size: 1em;
     color: #666;
 }  
 
+
 h2 {
-    font-size: 1.8em;
-    color: #333;
+    font-size: 20px;
     margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 100;
 }
 .card {
     background-color: rgba(68, 68, 68, 0.5); 
@@ -90,16 +104,21 @@ h2 {
     margin-right: 20px;
 }
 .card-content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
     flex-grow: 1;
 }
 .card-title {
-    font-size: 1.2em;
+    font-size: 15px;
     color: #ff4500;
-    margin: 0;
+    margin: 200 0 0 0;
+    justify-content: center;
 }
 .card-description {
-    font-size: 0.9em;
-    color: #333;
+    /* font-size: 5px; */
+    color: #fff;
     margin-top: 5px;
 }
 .cta-button {
