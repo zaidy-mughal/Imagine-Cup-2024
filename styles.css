@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    max-width: 425px;
+}
+
+.home {
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 80px;
+    background-image: url('images/homepagebg.png');
+    background-size: cover;
+    padding-top: 20px;
+}
+
+
+
+.header div{
+    width: 30px;
+    height: 30px;
+    background-image: url('images/hamburger.png');
+    background-size: cover;
+    margin: 0 0 35px 20px;
+}
+
+.heading {
+    text-align: left;
+    padding: 20px;
+}
+
+.heading h1 {
+    font-size: 2.1em;
+    color: #ec5242;
+    font-weight: 900;
+    text-align: left;
+    background-image: url('images/headingbg.png');
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;
+}
+.heading h2 {
+    font-size: 23px;
+    color: #ec5242;
+    margin: 0;
+    text-align: left;
+    font-weight: 300;
+}
+
+.info {
+    background-color: #f7f4f4;
+    width: 90%;
+    padding: 0px;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.info p {
+    font-size: 13px;
+    color: #444242;
+    text-align: left;
+    padding: 15px;
+}
+
+.event-date {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 1000;
+    color: #464241;
+}
+
+.venue {
+    font-size: 14px;
+    color: #444242;
+    margin: 20px
+}  
+
+
+
+.container{
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 35px 10px;
+    text-align: left;
+    background-image: url('images/highlights.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block; /* Keeps the underline to the text width */
+    position: relative; /* Allows positioning of the ::after element */
+    margin-bottom: 20px;
+}
+
+.container h2::after {
+    content: "";
+    position: absolute; /* Allows ::after to be positioned relative to the h2 */
+    left: 50%; /* Start at the center */
+    bottom: -3px; /* Adjust as needed for desired spacing */
+    transform: translateX(-50%);
+    width: 0; /* Start with no width */
+    height: 2px; /* Height of the underline */
+    background-color: #ec5242; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.container h2:hover::after {
+    width: 100%; /* Expands to the width of the heading */
+}
+
+
+.card {
+    background-color: rgba(64, 65, 68, 0.7); 
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.card-icon {
+    font-size: 2em;
+    color: #ec5242;
+    margin-right: 10px;
+}
+.card-content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+}
+.card-title {
+    font-size: 15px;
+    color: #e64901;
+    width: 80px;
+    flex-shrink: 0;
+    margin-top: 14px;
+    font-weight: 800;
+}
+.card-description {
+    color: #e0d9d9;
+    font-size: 15px;
+}
+.cta-button {
+    background-color: #ec5242;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    height: 60px;
+}
+.cta-button:hover {
+    background-color: #e03e00;
+}
+
+
+
+.speakers-section {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.speakers-section h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block; /* Keeps the underline to the text width */
+    position: relative; /* Allows positioning of the ::after element */
+}
+
+.speakers-section h2::after {
+    content: "";
+    position: absolute; /* Allows ::after to be positioned relative to the h2 */
+    left: 50%; /* Start at the center */
+    bottom: -3px; /* Adjust as needed for desired spacing */
+    transform: translateX(-50%);
+    width: 0; /* Start with no width */
+    height: 2px; /* Height of the underline */
+    background-color: #ec5242; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.speakers-section h2:hover::after {
+    width: 100%; /* Expands to the width of the heading */
+}
+
+.speaker {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+#all-speakers{
+    padding: 20px 0;
+}
+
+.speaker img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.speakerDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    height: 90px;
+}
+
+.speakerDetails h3 {
+    text-align: left;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+.speakerDetails h4 {
+    text-align: left;
+    font-size: 10px;
+    color: #ec5242;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+.speakerDetails p{
+    text-align: left;
+    font-size: 10px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+#load-more-btn{
+    background-color: white;
+    border: 1.5px solid #ccc;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1em;
+    width: 90%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#load-more-btn:hover {
+    border-color: #dddddd;
+    color: #e9e9e9;
+}
+
+
+footer {
+  background-color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-content {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.logodiv{
+  background-color: #434549;
+  color: white;
+  padding: 20px 20px 35px 20px;
+}
+.footer-content p{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+.partner-logos {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.partner-logos li {
+  margin: 0 10px; 
+  border: 1px solid rgb(78, 77, 77);
+  border-radius: 2px;
+}
+
+.partner-logos img {
+  height: 50px; 
+  width: 80px;
+}
+
+.copyright {
+  margin: 25px 0 0 0;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.copyright p{
+  font-size: 11px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.copyright img{
+  width: 150px;
+  height: 27px;
+}
+
+.copyright a {
+  color: #007bff;
+}
